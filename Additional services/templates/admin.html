@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin View - All Submissions</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            box-sizing: border-box;
+            padding-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Heading styling */
+        h1 {
+            color: #4a90e2;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 32px;
+            width: 100%;
+        }
+
+        /* Card styling */
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            width: 250px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-header {
+            font-size: 20px;
+            color: #4a90e2;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-body {
+            font-size: 16px;
+            color: #333;
+            word-wrap: break-word;
+        }
+
+        /* Button styling */
+        .delete-btn {
+            display: block;
+            background-color: #e74c3c;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 20px auto;
+            width: 200px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .delete-btn:hover {
+            background-color: #c0392b;
+        }
+
+        /* Responsive card layout */
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+                max-width: 300px;
+                margin: 10px auto;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .delete-btn {
+                width: 100%;
+            }
+        }
+
+        /* Mobile-friendly cards */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+                align-items: center;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .card {
+                width: 100%;
+                font-size: 14px;
+                margin: 5px;
+            }
+
+            .delete-btn {
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Admin - All Submitted Data</h1>
+        
+        <!-- Delete All Responses Button -->
+        <button class="delete-btn" onclick="deleteAllResponses()" title="Delete all student responses">Delete All Responses</button>
+        
+        <div class="card-container">
+            {% for student in students %}
+                <div class="card">
+                    <div class="card-header">{{ student['name'] }}</div>
+                    <div class="card-body">{{ student['data'] }}</div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script>
+        // Function to delete all responses
+        function deleteAllResponses() {
+            if (confirm('Are you sure you want to delete all responses?')) {
+                fetch('/delete_all_responses', {
+                    method: 'DELETE',
+                })
+                .then(response => response.json())  // Get the JSON response
+                .then(data => {
+                    if (data.message) {
+                        alert(data.message);  // Display the success message
+                        location.reload();  // Refresh the page
+                    } else {
+                        alert('Unexpected error.');
+                    }
+                })
+                .catch(error => {
+                    alert('Error: ' + error);  // Handle error
+                });
+            }
+        }
+    </script>
+</body>
+</html>

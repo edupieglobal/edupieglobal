@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Confirmation</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        /* Heading styling */
+        h1 {
+            color: #4a90e2;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        /* Paragraph styling */
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        /* Strong text styling */
+        strong {
+            color: #4a90e2;
+        }
+
+        /* Link styling */
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: #4a90e2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Link hover effect */
+        a:hover {
+            background-color: #357ab7;
+        }
+
+        /* Mobile responsive styling */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            a {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Thank You for Your Submission!</h1>
+        <p><strong>Name:</strong> {{ student['name'] }}</p>
+        <p><strong>Additional Data:</strong> {{ student['data'] }}</p>
+        <a href="/form">Submit More Data</a>
+    </div>
+</body>
+</html>
