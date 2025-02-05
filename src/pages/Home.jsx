@@ -34,6 +34,8 @@ const Home = () => {
       <Marquee text="WISHING YOU A HAPPY REPUBLIC DAY!!!" />
       <HeroSection /> {/* Hero Section */}
       <ProgramsSection /> {/* Programs Section */}
+      <br />
+      <br />
       <TrainersSection /> {/* Trainers Section */}
       <br />
       <br />
