@@ -4,7 +4,7 @@ import rashmi from "./Rashmi.jpeg";
 import shilpa from "./shilpa.jpeg";
 import Sateesh from "./Sateesh.jpeg";
 import Chandrahasan from "./Chandrahasan.jpg";
-import { image } from "framer-motion/client";
+import jayaram from "./jayaram.jpg";
 const facultyData = [
   {
     name: "M Bhimsen",
@@ -34,6 +34,7 @@ const facultyData = [
   {
     name: "Dr. N Jayarama Shetty",
     position: "Trainer, Personality Development & NLP Expert",
+    image: jayaram,
     bio: `
       Dr. Shetty holds a Ph.D., M.Com, MA(Psy), MBA, LL.B, CAIIB, PG DHRM, PG DMM, D TD, Pragya.
       With 18 years of experience in management teaching and 14 years as a trainer for Syndicate Bank, Dr. Shetty specializes in personality development and is an expert in NLP (Neuro-Linguistic Programming).
