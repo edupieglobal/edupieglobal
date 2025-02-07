@@ -1,16 +1,15 @@
 import React from 'react';
 import Logo from '../assets/Logo.jpeg'; // Adjust the path if needed
 import heroimage from '../assets/heroimage.jpeg';
-import { i } from 'framer-motion/client';
 import { useNavigate } from 'react-router-dom';
 
 const HeroSection = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between px-0 py-0 text-black border-2 border-solid border-gray-800 mx-6 my-20">
+    <section className="flex flex-col lg:flex-row items-center justify-between px-6 py-8 text-black border-2 border-solid border-gray-800 mx-6 my-20">
       {/* Left Section - Edu-Pie Info */}
-      <div className="flex-1 text-black flex items-center justify-center lg:justify-start py-8 lg:py-0 h-[400px]">
+      <div className="flex-1 text-black flex items-center justify-center lg:justify-start py-8 lg:py-0 h-auto">
         {/* Content */}
         <div className="relative z-10 text-center lg:text-left px-6 lg:px-12 max-w-lg mx-auto space-y-6">
           <img
@@ -56,11 +55,11 @@ const HeroSection = () => {
       {/* Right Section - Image */}
       <div className="flex-1 mt-8 lg:mt-0 text-center relative">
         {/* Image Container */}
-        <div className="relative z-10 w-full h-full">
+        <div className="relative z-10 w-full h-auto">
           <img
             src={heroimage} // Replace with your image path
             alt="Edu-Pie Global"
-            className="w-full h-full object-cover"
+            className="w-full h-auto object-cover"
           />
         </div>
       </div>
