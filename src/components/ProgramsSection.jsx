@@ -12,26 +12,28 @@ const ProgramsSection = () => {
 
   return (
     <div className="text-center space-y-6 mb-16 px-6">
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Our Top Programs</h2>
-      <p className="text-lg md:text-xl text-gray-700 font-light mb-6">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
+        Our Top Programs
+      </h2>
+      <p className="text-lg sm:text-xl md:text-2xl text-gray-700 font-light mb-6">
         Explore our range of top programs designed to boost your skills and career prospects.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-12  p-1">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
         {topPrograms.map((program, index) => (
           <div
             key={index}
-            className="bg-white text-gray-800 p-4 shadow-md hover:shadow-xl transform transition duration-300 ease-in-out hover:scale-105 border-1 border-solid border-black w-full h-80" // Adjusted to give a square-like appearance
+            className="bg-white text-gray-800 p-4 shadow-md hover:shadow-xl transform transition duration-300 ease-in-out hover:scale-105 border border-solid border-gray-300 w-full h-auto" // Adjusted to be flexible
             onClick={() => navigate(program.path)} // Use program.path for navigation
           >
-            <div className="w-full h-full relative ">
+            <div className="w-full h-48 sm:h-56 md:h-64 relative">
               <img
                 src={program.image}
                 alt={program.name}
-                className="w-full object-cover " 
+                className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-2xl font-semibold mt-4">{program.name}</h3>
-            <p className="text-gray-600">{program.description}</p>
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mt-4">{program.name}</h3>
+            <p className="text-gray-600 text-sm sm:text-base md:text-lg mt-2">{program.description}</p>
           </div>
         ))}
       </div>
