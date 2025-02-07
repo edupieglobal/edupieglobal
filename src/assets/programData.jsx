@@ -34,7 +34,7 @@ const programsData = {
     videoUrl: 'https://www.youtube.com/embed/WESGDi_ajUU', // Example video URL
     image: BusinessCommunicationImage,
     path: '/program/business-communication',
-    isTopProgram: false,
+    isTopProgram: true,
   },
   'spoken-english': {
     name: 'Spoken English',
