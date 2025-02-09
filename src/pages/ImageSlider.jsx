@@ -6,6 +6,8 @@ import adi2 from "../assets/gallery/adi2.jpeg";
 import adi from "../assets/gallery/adi.jpeg";
 import nag2 from "../assets/gallery/nag2.jpeg";
 import adi4 from "../assets/gallery/adi4.jpeg";
+import pic3 from "../assets/gallery/pic3.jpg";
+import fear from "../assets/gallery/fear.jpeg";
 
 
 const captionStyle = {
@@ -62,6 +64,14 @@ const slideImages = [
 ,
   {
     url: adi4,
+    caption: "",
+  },
+  {
+    url: fear,
+    caption: "Overcome stage fear",
+  },
+  {
+    url: pic3,
     caption: "",
   },
 ];
