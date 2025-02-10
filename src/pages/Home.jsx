@@ -31,7 +31,6 @@ const Home = () => {
 
   return (
     <section className="min-h-screen text-gray-900">
-      <Marquee text="WISHING YOU A HAPPY REPUBLIC DAY!!!" />
       <HeroSection /> {/* Hero Section */}
       <ProgramsSection /> {/* Programs Section */}
       <TrainersSection /> {/* Trainers Section */}  
