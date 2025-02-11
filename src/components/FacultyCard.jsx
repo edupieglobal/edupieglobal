@@ -19,7 +19,7 @@ const FacultyCard = ({ name, position, image, bio }) => {
           <div className="sm:hidden">
             <button
               onClick={handleBioToggle}
-              className="w-full py-2 px-4 bg-gray-200 text-gray-800 rounded-md mb-4 text-left"
+              className="w-full py-2 px-4 border-1 text-gray-800 rounded-md mb-4 text-center"
             >
               {isBioOpen ? "Hide Bio" : "Show Bio"}
             </button>
