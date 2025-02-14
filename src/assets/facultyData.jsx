@@ -5,6 +5,9 @@ import shilpa from "./shilpa.jpeg";
 import Sateesh from "./Sateesh.jpeg";
 import Chandrahasan from "./Chandrahasan.jpg";
 import jayaram from "./jayaram.jpg";
+import vishwajeet from "./vishwajeet.jpeg"  
+import arwen from "./arwen.jpeg"; 
+
 const facultyData = [
   {
     name: "M Bhimsen",
@@ -44,7 +47,7 @@ const facultyData = [
   {
     name: "Mr. Arjun R Prasad",
     position: "Principal Software Engineer, ARM Embedded Technologies",
-    image:arjun,
+    image: arjun,
     bio: `
       An Engineer by profession, Mr. Arjun has 17 years of teaching experience in Quantitative Aptitude and Logical Reasoning. 
       He has been imparting this knowledge to students at T.I.M.E for the last 10 years. 
@@ -81,6 +84,28 @@ const facultyData = [
       She has counselled numerous students and has been involved in marketing. 
       Ms. Shilpa has trained students from NITTE, MES, and MLA colleges, as well as students from government colleges, in Communication Skills, Group Discussions, and Personal Interviews. 
       She brings with her rich experience from the Toastmasters Club, Bangalore.
+    `,
+  },
+  {
+    name: "Mr. Vishwajeet Pandey",
+    position: "Visionary Leader, Personal Branding & Corporate Training Expert",
+    image: vishwajeet,
+    bio: `
+      A visionary leader with a distinguished track record in government networks, infrastructure development, and personal branding, Mr. Vishwajeet Pandey specializes in creating Personal Branding, Corporate Training, strategic influence, impactful mentorship, and leadership transformation. 
+      Passionate about empowering individuals and organizations, he helps people navigate complex professional landscapes and establish a strong presence in their respective domains.
+      In today’s fast-evolving world, visibility defines success. He enables students, professionals, and entrepreneurs to build authentic, influential, and high-impact personal brands that set them apart. 
+      By bridging strategy, communication, and leadership, he helps individuals position themselves as industry leaders.
+    `,
+  },
+  {
+    name: "Arwen M.A.G.M.A",
+    position: "Holistic Transformation Coach, Founder, M.A.G.M.A Studios",
+    image: arwen,
+    bio: `
+      Arwen M.A.G.M.A is a Film and Animation graduate, a seasoned Cinematographer, and an accomplished Filmmaker with over 16 years of experience in Communication, Technology, Production, Implementation, and Innovation. 
+      With expertise spanning Brand Development, Digital Marketing, and Crypto Mining, Arwen M.A.G.M.A has seamlessly transitioned into the world of professional bodybuilding and fitness modeling.
+      In the Sandalwood industry, Arwen M.A.G.M.A has made a significant impact as a Music Composer and Arranger, collaborating with notable industry figures and contributing to over 22 films. Among their most distinguished achievements is the creation of a documentary/drama film nominated at the Cannes Film Festival, which served to raise awareness about critical child health issues.
+      With a dynamic career that bridges creative storytelling, technology, and fitness, Arwen M.A.G.M.A continues to push boundaries across multiple industries.
     `,
   },
 ];
