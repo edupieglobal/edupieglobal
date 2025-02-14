@@ -70,11 +70,23 @@ const categories = [
     ],
   },
   {
-    title: 'Holistic Development Programs',
+    title: 'Comprehensive Growth Programs',
     programs: [
-      { name: 'Personal Branding', description: 'Develop your unique personal brand to stand out in both personal and professional spaces.', image: PublicSpeakingImage, path: '/program/personal-branding' },
-      ]
+      { 
+        name: 'Personal Branding', 
+        description: 'Develop your unique personal brand to stand out in both personal and professional spaces.', 
+        image: PublicSpeakingImage, 
+        path: '/program/personal-branding' 
+      },
+      { 
+        name: 'Holistic Development', 
+        description: 'Engage in a holistic approach to personal growth, focusing on mental, physical, and emotional well-being.', 
+        image: PublicSpeakingImage, 
+        path: '/program/holistic-development' 
+      }
+    ]
   }
+  
 ];
 
 export default categories;
