@@ -275,7 +275,16 @@ const programsData = {
   image: PublicSpeakingImage,
   path: '/program/personal-branding',
   isTopProgram: false,
+},
+  'holistic-development': {
+  name: 'Holistic Development',
+  description: 'Engage in a holistic approach to personal growth, focusing on mental, physical, and emotional well-being.',
+  videoUrl: 'https://www.youtube.com/embed/your-video-id-here', // Replace with actual video URL
+  image: PublicSpeakingImage,
+  path: '/program/holistic-development',
+  isTopProgram: false
 }
+
 
 };
 
