@@ -88,7 +88,7 @@ const facultyData = [
   },
   {
     name: "Mr. Vishwajeet Pandey",
-    position: "Visionary Leader, Personal Branding & Corporate Training Expert",
+    position: "Personal Branding & Corporate Training Expert",
     image: vishwajeet,
     bio: `
       A visionary leader with a distinguished track record in government networks, infrastructure development, and personal branding, Mr. Vishwajeet Pandey specializes in creating Personal Branding, Corporate Training, strategic influence, impactful mentorship, and leadership transformation. 
@@ -99,7 +99,7 @@ const facultyData = [
   },
   {
     name: "Arwen M.A.G.M.A",
-    position: "Holistic Transformation Coach, Founder, M.A.G.M.A Studios",
+    position: "Holistic Transformation Coach",
     image: arwen,
     bio: `
       Arwen M.A.G.M.A is a Film and Animation graduate, a seasoned Cinematographer, and an accomplished Filmmaker with over 16 years of experience in Communication, Technology, Production, Implementation, and Innovation. 
