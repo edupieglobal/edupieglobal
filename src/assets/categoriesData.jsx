@@ -69,6 +69,12 @@ const categories = [
       { name: 'Stress and Time Management', description: 'Learn  strategies to manage stress and time effectively.', image: PublicSpeakingImage, path: '/program/stress-and-time-management' },
     ],
   },
+  {
+    title: 'Holistic Development Programs',
+    programs: [
+      { name: 'Personal Branding', description: 'Develop your unique personal brand to stand out in both personal and professional spaces.', image: PublicSpeakingImage, path: '/program/personal-branding' },
+      ]
+  }
 ];
 
 export default categories;
