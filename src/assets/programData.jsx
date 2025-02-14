@@ -268,6 +268,15 @@ const programsData = {
     path: '/program/stress-and-time-management',
     isTopProgram: false,
   },
+  'personal-branding': {
+  name: 'Personal Branding',
+  description: 'Develop your unique personal brand to stand out in both personal and professional spaces.',
+  videoUrl: 'https://www.youtube.com/embed/your-video-id-here', // Replace with actual video URL
+  image: PublicSpeakingImage,
+  path: '/program/personal-branding',
+  isTopProgram: false,
+}
+
 };
 
 export default programsData;
