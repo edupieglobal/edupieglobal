@@ -87,8 +87,8 @@ const facultyData = [
     `,
   },
   {
-    name: "Mr. Vishwajeet Pandey",
-    position: "Personal Branding & Corporate Training Expert",
+    name: "Mr. V Pandey",
+    position: "Personal Branding & Corporate Training Expert[Guest Faculty]",
     image: vishwajeet,
     bio: `
       A visionary leader with a distinguished track record in government networks, infrastructure development, and personal branding, Mr. Vishwajeet Pandey specializes in creating Personal Branding, Corporate Training, strategic influence, impactful mentorship, and leadership transformation. 
