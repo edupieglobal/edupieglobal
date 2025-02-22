@@ -5,8 +5,9 @@ import shilpa from "./shilpa.jpeg";
 import Sateesh from "./Sateesh.jpeg";
 import Chandrahasan from "./Chandrahasan.jpg";
 import jayaram from "./jayaram.jpg";
-import vishwajeet from "./vishwajeet.jpeg"  
-import arwen from "./arwen.jpeg"; 
+import vishwajeet from "./vishwajeet.jpeg"; // Add image import for Mr. Vishwajeet
+import arwen from "./arwen.jpeg"; // Add image import for Arwen
+import nishant from "./nishant.jpg";
 
 const facultyData = [
   {
@@ -88,7 +89,7 @@ const facultyData = [
   },
   {
     name: "Mr. V Pandey",
-    position: "Personal Branding & Corporate Training Expert[Guest Faculty]",
+    position: "Visionary Leader, Personal Branding & Corporate Training Expert[Guest Faculty]",
     image: vishwajeet,
     bio: `
       A visionary leader with a distinguished track record in government networks, infrastructure development, and personal branding, Mr. Vishwajeet Pandey specializes in creating Personal Branding, Corporate Training, strategic influence, impactful mentorship, and leadership transformation. 
@@ -99,13 +100,23 @@ const facultyData = [
   },
   {
     name: "Arwen M.A.G.M.A",
-    position: "Holistic Transformation Coach",
+    position: "Holistic Transformation Coach, Founder, M.A.G.M.A Studios",
     image: arwen,
     bio: `
       Arwen M.A.G.M.A is a Film and Animation graduate, a seasoned Cinematographer, and an accomplished Filmmaker with over 16 years of experience in Communication, Technology, Production, Implementation, and Innovation. 
       With expertise spanning Brand Development, Digital Marketing, and Crypto Mining, Arwen M.A.G.M.A has seamlessly transitioned into the world of professional bodybuilding and fitness modeling.
       In the Sandalwood industry, Arwen M.A.G.M.A has made a significant impact as a Music Composer and Arranger, collaborating with notable industry figures and contributing to over 22 films. Among their most distinguished achievements is the creation of a documentary/drama film nominated at the Cannes Film Festival, which served to raise awareness about critical child health issues.
       With a dynamic career that bridges creative storytelling, technology, and fitness, Arwen M.A.G.M.A continues to push boundaries across multiple industries.
+    `,
+  },
+  {
+    name: "Nishanth Tripathi",
+    position: "Holistic Transformation Coach, Founder, M.A.G.M.A Studios",
+    image: nishnat,
+    bio: `
+     Nishanth Tripathi is a digital marketing maverick who thrives on crafting unforgettable brand stories. 
+     As the founder of Comma Media, he helps brands and founders grow their social media presence organically through powerful storytelling and strategic content marketing. With a background in video editing and a sharp eye for design, Nishanth doesn’t just create content—he engineers experiences that captivate audiences and drive engagement. Whether it’s building compelling narratives,
+    refining brand aesthetics, or diving into event marketing, he’s always one step ahead, turning visions into reality with precision and creativity. 
     `,
   },
 ];
