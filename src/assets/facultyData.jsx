@@ -7,7 +7,7 @@ import Chandrahasan from "./Chandrahasan.jpg";
 import jayaram from "./jayaram.jpg";
 import vishwajeet from "./vishwajeet.jpeg"; // Add image import for Mr. Vishwajeet
 import arwen from "./arwen.jpeg"; // Add image import for Arwen
-import nishant from "./nishant.jpg";
+import nishant from "./nishant.png";
 
 const facultyData = [
   {
@@ -112,7 +112,7 @@ const facultyData = [
   {
     name: "Nishanth Tripathi",
     position: "Holistic Transformation Coach, Founder, M.A.G.M.A Studios",
-    image: nishnat,
+    image: nishant,
     bio: `
      Nishanth Tripathi is a digital marketing maverick who thrives on crafting unforgettable brand stories. 
      As the founder of Comma Media, he helps brands and founders grow their social media presence organically through powerful storytelling and strategic content marketing. With a background in video editing and a sharp eye for design, Nishanth doesn’t just create content—he engineers experiences that captivate audiences and drive engagement. Whether it’s building compelling narratives,
