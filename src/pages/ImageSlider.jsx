@@ -8,6 +8,12 @@ import nag2 from "../assets/gallery/nag2.jpeg";
 import adi4 from "../assets/gallery/adi4.jpeg";
 import pic3 from "../assets/gallery/pic3.jpg";
 import fear from "../assets/gallery/fear.jpeg";
+import interview from "../assets/gallery/interview.jpeg";
+import class_college_1 from "../assets/gallery/class_college_1.jpeg";
+import class_college_2 from "../assets/gallery/class_college_2.jpeg";
+import class_college_3 from "../assets/gallery/class_college_3.jpeg";
+import class_college_4 from "../assets/gallery/class_college_4.jpeg";
+
 
 
 const captionStyle = {
@@ -18,7 +24,7 @@ const captionStyle = {
   bottom: "10%",
   left: "50%",
   transform: "translateX(-50%)",
-  fontSize: "18px",
+  fontSize: "1.2rem",  // Adjusted for responsiveness
   fontWeight: "500",
   letterSpacing: "0.5px",
   textAlign: "center",
@@ -29,8 +35,8 @@ const captionStyle = {
 
 const slideStyle = {
   position: "relative",
-  width: "100%",
-  height: "50vh",
+  width: "",
+  height: "75vh",  // Adjust height to be responsive
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -47,7 +53,7 @@ const imageStyle = {
 const slideImages = [
   {
     url: adi1,
-    caption: "MoU between Edu-pie Global and Aditya College of Engineering and Technology  ",
+    caption: "MoU between Edu-pie Global and Aditya College of Engineering and Technology",
   },
   {
     url: adi2,
@@ -55,13 +61,12 @@ const slideImages = [
   },
   {
     url: nag2,
-    caption: "Class in progess in Nagarjuna Degree college",
+    caption: "Class in progress in Nagarjuna Degree College",
   },
   {
     url: adi,
-    caption: "Reinventing Ourselves in this VUCA World,a talk by Dr. Pramod Pathak in                                          Aditya College of Engineering and Technology",
-}
-,
+    caption: "Reinventing Ourselves in this VUCA World, a talk by Dr. Pramod Pathak at Aditya College of Engineering and Technology",
+  },
   {
     url: adi4,
     caption: "",
@@ -74,17 +79,35 @@ const slideImages = [
     url: pic3,
     caption: "",
   },
+  {
+    url:interview ,
+    caption: "",
+  },{
+    url: class_college_1,
+    caption: "",
+  },{
+    url: class_college_2,
+    caption: "",
+  },{
+    url: class_college_3,
+    caption: "",
+  },{
+    url: class_college_4,
+    caption: "",
+  },
+  
 ];
 
 const ImageSlider = () => {
   return (
     <div
-      className="slide-container"
+      className=""
       style={{
         paddingTop: "60px",
         paddingBottom: "60px",
         maxWidth: "1200px",
         margin: "0 auto",
+        width: "100%",
       }}
     >
       <Slide
@@ -112,3 +135,4 @@ const ImageSlider = () => {
 };
 
 export default ImageSlider;
+
