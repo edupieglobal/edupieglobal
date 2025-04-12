@@ -111,7 +111,7 @@ const facultyData = [
   },
   {
     name: "Nishanth Tripathi",
-    position: "Holistic Transformation Coach, Founder, M.A.G.M.A Studios",
+    position: "Digital Marketing Trainer",
     image: nishant,
     bio: `
      Nishanth Tripathi is a digital marketing maverick who thrives on crafting unforgettable brand stories. 
